@@ -1,0 +1,490 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #874bbb; /* Color rosa intenso */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px; /* Tamaño de título más grande */
+}
+
+h2 {
+    font-size: 30px; /* Tamaño de título más grande */
+}
+
+/* Vista styles */
+
+.vista {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 50px auto; /* Centrar el formulario */
+    width: 80%; /* Ancho del formulario */
+}
+
+.vista.visible {
+    display: block;
+}
+
+/* Acceso styles */
+
+#acceso {
+    background-color: #dbdeff;; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#acceso form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Añadir un margen superior de 20px */
+}
+
+#acceso label {
+    margin-bottom: 10px;
+    color: #181818;
+}
+
+#acceso input[type="text"], #acceso input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#acceso input[type="button"] {
+    background-color: #c96fe2;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+#acceso input[type="button"]:hover {
+    background-color: #943fa4; /* Color rosa oscuro */
+}
+
+#acceso form p {
+    text-align: left;
+    font-size: 20px;
+    margin-left: -350px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+/* Datos Medico styles */
+
+#datosMedico {
+    background-color: #F4DCF5; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 780px; /* Aumenta el tamaño máximo del contenedor */
+    margin: auto;
+}
+
+#datosMedico form {
+    display: flex;
+    flex-direction: column;
+}
+
+#datosMedico label {
+    margin-bottom: 15px;
+    color: #666;
+    display: block;
+    width: 80%;
+    margin-right: 10px;
+    margin-left: 60px;
+}
+
+#datosMedico label input,
+#datosMedico label select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#datosMedico input[type="button"] {
+    background-color: #c56fe2; /* Color rosa intenso */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#datosMedico input[type="button"]:hover {
+    background-color: #943fa4; /* Color rosa oscuro */
+}
+
+#datosMedico .button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#datosMedico .button-group input {
+    width: 48%;
+}
+
+/* Expediente Paciente styles */
+.dos-columnas {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.columna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+input[type="range"] {
+   width: 100%;
+    accent-color: #c56fe2;
+    position: relative;
+    z-index: 2;
+}
+.slid-wrapper {
+  display: inline-block;
+  text-align: left;
+}
+
+#etiquetaValor {
+  display: inline-block;
+  margin-right: 8px;
+  background-color: #fff;
+  padding: 2px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  vertical-align: middle;
+  max-width: 45px;
+}
+
+
+
+#expedientePaciente {
+    background-color: #F5F5DC; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#expedientePaciente form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#expedientePaciente label {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+#expedientePaciente input[type="text"], #expedientePaciente input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+#expedientePaciente select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+#expedientePaciente textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    color: #333;
+}
+
+#expedientePaciente button[type="button"] {
+    background-color: #c56fe2; /* Color rosa intenso */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#expedientePaciente button[type="button"]:hover {
+    background-color: #943fa4; /* Color rosa oscuro */
+}
+
+/* Inicio styles */
+
+#Inicio {
+    background-color: #f4dcf5; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Inicio h2 {
+    margin-bottom: 20px;
+    color: #881c99; /* Color rosa intenso */
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+#Inicio button[type="button"] {
+    background-color: #c56fe2; /* Color rosa intenso */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+#Inicio button[type="button"]:hover {
+    background-color: #943fa4; /* Color rosa oscuro */
+}
+
+/* Chat styles */
+
+#chatMAPEsp {
+    background-color: #F5F5DC; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatMAPEsp h2 {
+    margin-bottom: 20px;
+    color: #E2786F; /* Color rosa intenso */
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+#chatMAPEsp ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#chatMAPEsp li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#chatMAPEsp input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+
+#chatMAPEsp button[type="button"] {
+    background-color: #c56fe2; /* Color rosa intenso */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatMAPEsp button[type="button"]:hover {
+    background-color: #9b69ff; /* Color rosa oscuro */
+}
+
+#chatMAPEsp ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#chatMAPEsp li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+}
+
+#chatMAPEsp li.enviado {
+    justify-content: flex-end; /* Alinear a la derecha */
+}
+
+#chatMAPEsp li.recibido {
+    justify-content: flex-start; /* Alinear a la izquierda */
+}
+
+/* Tabla styles */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px; /* Espacio entre columnas */
+}
+
+th, td {
+    padding: 15px; /* Celdas más grandes */
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #F5F5DC; /* Color beige claro */
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+}
+
+table .tablaExpedientes button[type="button"] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.tablaExpedientes button[type="button"]:hover {
+    background-color: #333;
+}
+
+.tablaExpedientes button[type="button"]:active {
+    background-color: #000080; /* Azul marino */
+}
+
+.tablaExpedientes button[type="button"]:focus {
+    outline: none;
+}
+
+/* Botones de secciones adicionales */
+
+#ExpedientesAsignados button, #AsignarExpediente button, #chatMAPEsp button {
+    background-color: #c56fe2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+#ExpedientesAsignados button:hover, #AsignarExpediente button:hover, #chatMAPEsp button:hover {
+    background-color: #943fa4; /* Color rosa oscuro */
+}
+
+#fotosPaciente img {
+    width: 1000px; 
+    max-width: 400px; /* Limita el tamaño máximo de la imagen */
+    height: auto;
+}
+
+#fotosPaciente td {
+    padding: 8px;
+    text-align: center;
+}
+
+#tablaImagenes th:nth-child(1), #tablaImagenes td:nth-child(1) {
+    width: 5%; /* ID */
+}
+
+#tablaImagenes th:nth-child(2), #tablaImagenes td:nth-child(2) {
+    width: 15%; /* Fecha Creación */
+}
+
+#tablaImagenes th:nth-child(3), #tablaImagenes td:nth-child(3) {
+    width: 50%; /* Imagen */
+}
+
+#tablaImagenes th:nth-child(4), #tablaImagenes td:nth-child(4) {
+    width: 15%; /* Select */
+}
+
+#tablaImagenes th:nth-child(5), #tablaImagenes td:nth-child(5) {
+    width: 5%; /* Botón */
+}
+
+#tablaImagenes td button {
+    background-color: #c96fe2;
+    color: white;              
+    padding: 10px 20px;       
+    border: none;             
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;          
+}

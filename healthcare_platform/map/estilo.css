@@ -1,0 +1,442 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #E2786F; /* Color rosa intenso */
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+h1 {
+    font-size: 50px; /* Tamaño de título más grande */
+}
+h2 {
+    font-size: 30px; /* Tamaño de título más grande */
+}
+
+/* Vista styles */
+
+.vista {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 40px auto; /* Centrar el formulario */
+    width: 80%; /* Ancho del formulario */
+}
+
+.vista.visible {
+    display: block;
+}
+
+/* Acceso styles */
+
+#acceso {
+    background-color: #FFDBDB;; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#acceso form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Añadir un margen superior de 20px */
+}
+
+
+#acceso label {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+#acceso input[type="text"], #acceso input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    background-color: #fff;
+    color: #333;
+}
+
+#acceso input[type="button"] {
+    background-color: #E2786F;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+  
+
+#acceso input[type="button"]:hover {
+    background-color: #942a00; /* Color rosa oscuro */
+}
+
+#acceso p {
+    text-align: left;
+    font-size: 20px;
+    margin-left: -620px;
+  }
+
+/* Datos Medico styles */
+
+#datosMedico {
+    background-color: #F5F5DC; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#datosMedico form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#datosMedico label {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+#datosMedico input[type="text"], #datosMedico input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+#datosMedico select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+#datosMedico input[type="button"] {
+    background-color: #E2786F; /* Color rosa intenso */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#datosMedico input[type="button"]:hover {
+    background-color: #942a00; /* Color rosa oscuro */
+}
+
+/* Expediente Paciente styles */
+
+#expedientePaciente {
+    background-color: #F5F5DC; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#expedientePaciente form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#expedientePaciente label {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+#expedientePaciente input[type="text"], #expedientePaciente input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+#expedientePaciente select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+#expedientePaciente textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    color: #333;
+}
+
+#expedientePaciente button[type="button"] {
+    background-color: #E2786F; /* Color rosa intenso */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#expedientePaciente button[type="button"]:hover {
+    background-color: #942a00; /* Color rosa oscuro */
+}
+
+/* Inicio styles */
+
+#Inicio {
+    background-color: #F5F5DC; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Inicio h2 {
+    margin-bottom: 20px;
+    color: #E2786F; /* Color rosa intenso */
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+#Inicio button[type="button"], #botonEliminarTabla, #botonChatearTabla {
+    background-color: #E2786F; /* Color rosa intenso */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Inicio button[type="button"]:hover {
+    background-color: #942a00; /* Color rosa oscuro*/
+}
+
+/* Chat styles */
+
+#chat {
+    background-color: #F5F5DC; /* Color beige claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat h2 {
+    margin-bottom: 20px;
+    color: #E2786F; /* Color rosa intenso */
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+#chat ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#chat li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#chat input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+#chat button[type="button"] {
+    background-color: #942a00; /* Color rosa intenso */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat button[type="button"]:hover {
+    background-color: #942a00; /* Color rosa oscuro */
+}
+#chat ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #chat li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #chat li.enviado {
+    justify-content: flex-end; /* Alinear a la derecha */
+  }
+  
+  #chat li.recibido {
+    justify-content: flex-start; /* Alinear a la izquierda */
+  }
+/* Botones DIV*/
+#botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+/* Tabla styles */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px; /* Espacio entre columnas */
+}
+
+th, td {
+    padding: 15px; /* Celdas más grandes */
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #F5F5DC; /* Color beige claro */
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+}
+table .tablaExpedientes button[type="button"] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .tablaExpedientes button[type="button"]:hover {
+    background-color: #333;
+  }
+  
+  .tablaExpedientes button[type="button"]:active {
+    background-color: #000080; /* Azul marino */
+  }
+  
+  .tablaExpedientes button[type="button"]:focus {
+    outline: none;
+  }
+/* Estilo para responsive */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; 
+        padding: 0;
+        margin:0;
+    }
+
+    h1 {
+        font-size: 30px; 
+    }
+
+    h2 {
+        font-size: 22px; 
+    }
+    #acceso p {
+        text-align: center; /* Asegura que el texto esté centrado */
+        font-size: 18px; 
+        margin: 0 auto; 
+        width: 90%; 
+    }
+    #tablaExpedientes thead{
+        display:none
+    }
+    #tablaExpedientes tr{
+        display:flex;
+        flex-direction:column;
+        padding:1em;
+        margin-bottom: 1em;
+    }
+    #tablaExpedientes td[data-titulo]{
+        display:flex
+    }
+    #tablaExpedientes td[data-titulo]::before{/*tendra el contenido del attributo*/
+        content:attr(data-titulo);
+        width:80px;
+        color:silver;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    #tablaExpedientes {
+        width: 100%; /* Asegura que el div ocupe todo el ancho disponible */
+        max-height: 400px;
+        overflow-y: auto; /* scroll vertical */
+    }
+    button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+   div{
+    width: 100%;
+   }
+
+    
+}
